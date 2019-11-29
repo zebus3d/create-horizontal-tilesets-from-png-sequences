@@ -28,7 +28,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 input_seq_format = "png"  # all png in current dir
 type_input_img = "RGBA"
 type_output_img = "RGBA"
-output_tileset_file = "tileset.png"  # name of image result
+output_tileset_file = "tileset-bunny.png"  # name of image result
 out_format = "PNG"
 
 # if there are a previous tileset, they will be removed:
