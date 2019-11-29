@@ -22,15 +22,16 @@ coin = sprite({
 coinImage.addEventListener("load", gameLoop);
 coinImage.src = "images/tileset-bunny.png";
 
+// set if you need autoplay on (1) or off (0):
+autoplay = true;
+
 // start and pause
-var state = 1;
 canvas.addEventListener('click', function() {
-    if (state == 1) {
+    if (autoplay == 1) {
         pause();
-        state = 0;
+        autoplay = false;
     } else {
         start();
-        state = 1;
+        autoplay = true;
     }
-
 }, false);

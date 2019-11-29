@@ -19,6 +19,7 @@
 // MIT license
 
 var statusAnim;
+var autoplay;
 
 var lastTime = 0;
 var vendors = ['ms', 'moz', 'webkit', 'o'];
@@ -69,7 +70,9 @@ function pause() {
 function gameLoop() {
     statusAnim = undefined;
 
-    start();
+    if (autoplay == true){
+        start();
+    }
 
     coin.update();
     coin.render();
