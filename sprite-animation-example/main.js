@@ -21,3 +21,16 @@ coin = sprite({
 // Load sprite sheet
 coinImage.addEventListener("load", gameLoop);
 coinImage.src = "images/tileset-bunny.png";
+
+// start and pause
+var state = 1;
+canvas.addEventListener('click', function() {
+    if (state == 1) {
+        pause();
+        state = 0;
+    } else {
+        start();
+        state = 1;
+    }
+
+}, false);

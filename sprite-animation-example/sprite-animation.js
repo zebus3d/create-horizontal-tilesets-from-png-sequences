@@ -18,6 +18,8 @@
 // requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
 // MIT license
 
+var statusAnim;
+
 var lastTime = 0;
 var vendors = ['ms', 'moz', 'webkit', 'o'];
 for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
@@ -51,12 +53,27 @@ var coin,
     coinImage,
     canvas;
 
-function gameLoop() {
+function start() {
+    if (!statusAnim) {
+        statusAnim = window.requestAnimationFrame(gameLoop);
+    }
+}
 
-    window.requestAnimationFrame(gameLoop);
+function pause() {
+    if (statusAnim) {
+       window.cancelAnimationFrame(statusAnim);
+       statusAnim = undefined;
+    }
+}
+
+function gameLoop() {
+    statusAnim = undefined;
+
+    start();
 
     coin.update();
     coin.render();
+
 }
 
 function sprite(options) {
