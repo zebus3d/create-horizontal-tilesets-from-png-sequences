@@ -18,12 +18,12 @@ coin = sprite({
     ticksPerFrame: 4
 });
 
+// set if you need autoplay on (1) or off (0):
+autoplay = true;
+
 // Load sprite sheet
 coinImage.addEventListener("load", gameLoop);
 coinImage.src = "images/tileset-bunny.png";
-
-// set if you need autoplay on (1) or off (0):
-autoplay = true;
 
 // start and pause
 canvas.addEventListener('click', function() {
