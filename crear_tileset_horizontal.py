@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 
-##########################################################################
-# Crear un tileset horizontal a partir de una secuencia de imagenes .pngs:
-
 import os
 import re
 
 from PIL import Image
+
+##########################################################################
+# Crear un tileset horizontal a partir de una secuencia de imagenes .pngs.
+# Hay que ejecutar este script junto a la secuencia de pngs.
+##########################################################################
 
 # Settings:
 input_seq_format = "png"  # all png in current dir
