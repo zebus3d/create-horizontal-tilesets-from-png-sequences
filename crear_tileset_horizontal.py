@@ -31,7 +31,7 @@ type_output_img = "RGBA"
 output_tileset_file = "tileset.png"  # name of image result
 out_format = "PNG"
 
-# if there are previous tiles, they will be removed:
+# if there are a previous tileset, they will be removed:
 if os.path.exists(output_tileset_file):
     os.remove(output_tileset_file)
 
