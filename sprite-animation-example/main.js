@@ -14,7 +14,7 @@ coin = sprite({
     width: 2002,
     height: 222,
     image: coinImage,
-    numberOfFrames: 10,
+    numberOfFrames: 7,
     ticksPerFrame: 4
 });
 
