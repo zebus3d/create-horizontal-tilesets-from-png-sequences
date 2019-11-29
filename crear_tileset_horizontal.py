@@ -6,8 +6,8 @@ import re
 from PIL import Image
 
 ##########################################################################
-# Crear un tileset horizontal a partir de una secuencia de imagenes .pngs.
-# Hay que ejecutar este script junto a la secuencia de pngs.
+# This script create a horizontal tileset from a sequence of images .pngs.
+# This script must be executed next to the pngs sequence.
 ##########################################################################
 
 # Settings:
