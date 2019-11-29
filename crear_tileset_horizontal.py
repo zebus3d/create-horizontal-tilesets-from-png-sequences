@@ -6,10 +6,11 @@
 import sys, os, re
 from PIL import Image
 
-input_seq_format = "png"
+# Settings:
+input_seq_format = "png"  # all png in current dir
 type_input_img = "RGBA"
 type_output_img = "RGBA"
-output_tileset_file = "tileset.png"
+output_tileset_file = "tileset.png"  # name of image result
 out_format = "PNG"
 
 # si existe ya el tileset lo borro:
