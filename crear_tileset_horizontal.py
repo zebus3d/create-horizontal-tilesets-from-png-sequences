@@ -36,7 +36,7 @@ if os.path.exists(output_tileset_file):
     os.remove(output_tileset_file)
 
 images = []
-for seq_img in os.listdir('.'):
+for seq_img in sorted(os.listdir('.')):
     if re.match(r'.*\.' + input_seq_format, seq_img):
         im = Image.open(seq_img)
         if type_input_img == "RGBA":
