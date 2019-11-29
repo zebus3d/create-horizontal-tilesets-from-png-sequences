@@ -3,7 +3,9 @@
 ##########################################################################
 # Crear un tileset horizontal a partir de una secuencia de imagenes .pngs:
 
-import sys, os, re
+import os
+import re
+
 from PIL import Image
 
 # Settings:
