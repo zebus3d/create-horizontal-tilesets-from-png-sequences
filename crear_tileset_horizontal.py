@@ -13,7 +13,7 @@ type_output_img = "RGBA"
 output_tileset_file = "tileset.png"  # name of image result
 out_format = "PNG"
 
-# si existe ya el tileset lo borro:
+# if there are previous tiles, they will be removed:
 if os.path.exists(output_tileset_file):
     os.remove(output_tileset_file)
 
@@ -41,4 +41,5 @@ for im in images:
     new_im.paste(im, (x_offset, 0))
     x_offset += im.size[0]
 
+# create the output file:
 new_im.save(output_tileset_file, out_format)
