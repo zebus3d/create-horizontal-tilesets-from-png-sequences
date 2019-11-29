@@ -3,11 +3,26 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>The HTML5 Herald</title>
+  <title>Bunny example</title>
+
+    <style type="text/css">
+        body {
+            background-color: #d2d2d2;
+            text-align: center;
+            margin: 0 auto;
+        }
+        #wrapper {
+            margin-top: 60px;
+        }
+    </style>
+
 </head>
 
-<body style="background-color: #d2d2d2;">
-    <canvas id="bunny"></canvas>
+<body>
+    <!-- Optional Wrapper-->
+    <div id="wrapper">
+        <canvas id="bunny"></canvas>
+    </div>
     <script type="text/javascript" src="sprite-animation.js"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
