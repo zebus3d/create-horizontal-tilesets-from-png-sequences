@@ -24,7 +24,7 @@ for seq_img in os.listdir('.'):
     if re.match(r'.*\.' + input_seq_format, seq_img):
         im = Image.open(seq_img)
         if type_input_img == "RGBA":
-            im = im.convert('RGBA')
+            im = im.convert(type_input_img)
         images.append(im)
 
 widths, heights = zip(*(i.size for i in images))
@@ -33,7 +33,7 @@ total_width = sum(widths)
 max_height = max(heights)
 
 if type_output_img == "RGBA":
-    new_im = Image.new('RGBA', (total_width, max_height))
+    new_im = Image.new(type_output_img, (total_width, max_height))
 else:
     new_im = Image.new('RGB', (total_width, max_height))
 
