@@ -1,2 +1,2 @@
-# tileset_from_sequences
-tileset_from_sequences
+# create horizontal tilesets from png sequences
+create horizontal tilesets from png sequences
