@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 ##########################################################################
 # Crear un tileset horizontal a partir de una secuencia de imagenes .pngs:
 
