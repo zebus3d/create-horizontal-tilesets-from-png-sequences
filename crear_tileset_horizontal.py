@@ -59,5 +59,8 @@ for im in images:
     new_im.paste(im, (x_offset, 0))
     x_offset += im.size[0]
 
-# create the output file:
-new_im.save(output_tileset_file, out_format)
+# Create the output file:
+# When optimize option is True
+# compress_level has no effect (it is set to 9 regardless of a value passed).
+# new_im.save(output_tileset_file, out_format, compress_level=9)
+new_im.save(output_tileset_file, out_format, optimize=True)
